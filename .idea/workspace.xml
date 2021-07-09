@@ -20,13 +20,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83d925ce-5643-47ad-9f18-142f91a0826b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210707123507.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210707130813.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210709092207.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210709093932.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210709094335.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210709095003.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210709100608.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/build/globalScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/build/runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/build/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Device.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Forum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/GameCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PostCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Topic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/DeviceRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ForumRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/GameCategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/GameRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MessageRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PostCategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PostRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/TopicRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/owner/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jeuxVideosSymfony.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jeuxVideosSymfony.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
