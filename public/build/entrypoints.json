@@ -1,0 +1,18 @@
+{
+  "entrypoints": {
+    "globalScript": {
+      "js": [
+        "/build/runtime.js",
+        "/build/globalScript.js"
+      ]
+    },
+    "style": {
+      "js": [
+        "/build/runtime.js"
+      ],
+      "css": [
+        "/build/style.css"
+      ]
+    }
+  }
+}
