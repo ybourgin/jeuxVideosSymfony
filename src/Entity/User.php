@@ -64,10 +64,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $messages;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Ticket::class, mappedBy="user")
+     */
+    private $tickets;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Ticket::class, mappedBy="treatedBy")
+     */
+    private $treatedTickets;
+
     public function __construct()
     {
         $this->posts = new ArrayCollection();
         $this->messages = new ArrayCollection();
+        $this->tickets = new ArrayCollection();
+        $this->treatedTickets = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -249,6 +261,66 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
             // set the owning side to null (unless already changed)
             if ($message->getUser() === $this) {
                 $message->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Ticket[]
+     */
+    public function getTickets(): Collection
+    {
+        return $this->tickets;
+    }
+
+    public function addTicket(Ticket $ticket): self
+    {
+        if (!$this->tickets->contains($ticket)) {
+            $this->tickets[] = $ticket;
+            $ticket->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTicket(Ticket $ticket): self
+    {
+        if ($this->tickets->removeElement($ticket)) {
+            // set the owning side to null (unless already changed)
+            if ($ticket->getUser() === $this) {
+                $ticket->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Ticket[]
+     */
+    public function getTreatedTickets(): Collection
+    {
+        return $this->treatedTickets;
+    }
+
+    public function addTreatedTicket(Ticket $treatedTicket): self
+    {
+        if (!$this->treatedTickets->contains($treatedTicket)) {
+            $this->treatedTickets[] = $treatedTicket;
+            $treatedTicket->setTreatedBy($this);
+        }
+
+        return $this;
+    }
+
+    public function removeTreatedTicket(Ticket $treatedTicket): self
+    {
+        if ($this->treatedTickets->removeElement($treatedTicket)) {
+            // set the owning side to null (unless already changed)
+            if ($treatedTicket->getTreatedBy() === $this) {
+                $treatedTicket->setTreatedBy(null);
             }
         }
 

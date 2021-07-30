@@ -1,0 +1,45 @@
+{% extends 'layout/frontAdmin.html.twig' %}
+
+{% block title %}Forum index{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Forum</h1>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>CreatedAt</th>
+                <th>actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for forum in forums %}
+
+                <tr>
+                    <td>{{ forum.id }}</td>
+                    <td>{{ forum.title }}</td>
+                    <td>{{ forum.createdAt ? forum.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                    <td>
+                        <div style="display: flex; flex-direction: row">
+                            <a class="btn btn-outline-primary"
+                               href="{{ path('topic_index', {'id': forum.id}) }}">show</a>
+                            <a class="btn btn-outline-secondary" style="margin: 0px 5px"
+                               href="{{ path('forum_edit', {'id': forum.id}) }}">edit</a>
+                            {{ include('forum/_delete_form.html.twig') }}
+                        </div>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="4">no records found</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <a class="btn btn-success" href="{{ path('forum_new') }}">Create new</a>
+    </div>
+{% endblock %}

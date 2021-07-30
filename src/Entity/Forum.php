@@ -35,7 +35,7 @@ class Forum
     private $game;
 
     /**
-     * @ORM\OneToMany(targetEntity=Topic::class, mappedBy="forum")
+     * @ORM\OneToMany(targetEntity=Topic::class, mappedBy="forum", cascade={"remove"})
      */
     private $topics;
 

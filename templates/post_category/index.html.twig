@@ -1,0 +1,18 @@
+{% extends 'layout/frontAdmin.html.twig' %}
+
+{% block title %}Hello PostCategoryController!{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <h1>Post category</h1>
+    <ul>
+        {% for category in categoryList %}
+            <li>{{ category.name }}
+                <a class="btn btn-outline btn-success" href="{{ path('post_editCategory',{'id': category.id}) }}">Edit</a>
+                <a class="btn btn-outline btn-danger" href="{{ path('post_removeCategory',{'id': category.id}) }}">supprimer</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a class="btn btn-lg btn-primary" href="{{ path('post_addCategory') }}">Post Category</a>
+</div>
+{% endblock %}

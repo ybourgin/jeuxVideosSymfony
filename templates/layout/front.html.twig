@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid" style="display: flex; align-content: space-between">
+
+            <li style="list-style: none" class="nav-item dropdown">
+                <a style="text-decoration: none; color: #FFFFFF; font-weight: bold" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{{ path('home') }}">Home</a></li>
+                    <li><a class="dropdown-item" href="{{ path('frontForum_index') }}">Forum</a></li>
+                    <li><a class="dropdown-item" href="{{ path('addTicket') }}">Ticket</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                </ul>
+            </li>
+            <div>
+            {%  if is_granted('IS_ANONYMOUS') %}
+                <a class="btn btn-lg btn-primary" href="{{ path('app_login') }}">
+                    connexion
+                </a>
+            {% endif %}
+            {%  if app.user %}
+                <a class="btn btn-lg btn-primary" href="{{ path('app_logout') }}">
+                    deconnexion
+                </a>
+            {% endif %}
+            {%  if is_granted('ROLE_ADMIN') %}
+                <a class="btn btn-lg btn-primary" href="{{path('homeAdmin')}}">
+                    admin
+                </a>
+            {% endif %}
+            </div>
+
+        </div>
+    </nav>
+{% endblock %}
+
+{% block footer %}
+    <div style="background-color: #6c757d; text-align: center;position:absolute; width:100%; bottom: 0; height: 80px" >
+        <h2 style="color: #FFFFFF">FRONT FOOTER</h2>
+    </div>
+{% endblock %}

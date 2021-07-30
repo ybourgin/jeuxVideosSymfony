@@ -19,7 +19,40 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83d925ce-5643-47ad-9f18-142f91a0826b" name="Default Changelist" comment="" />
+    <list default="true" id="83d925ce-5643-47ad-9f18-142f91a0826b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/image/WC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PostCategoryType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/TicketType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front_forum/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home/indexAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layout/frontAdmin.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post/addPost.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post/detailPost.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post/editPost.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/post_category/addCategory.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ticket/readTicket.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ticket/treatedTicket.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/globalScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/globalScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Forum.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Forum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Topic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,8 +216,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/image" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HB\Documents\cours\coursPHP\jeuxVideosSymfony\jeuxVideosSymfony\assets\image" />
+      <recent name="C:\Users\HB\Documents\cours\coursPHP\jeuxVideosSymfony\jeuxVideosSymfony\templates\front_forum" />
+      <recent name="C:\Users\HB\Documents\cours\coursPHP\jeuxVideosSymfony\jeuxVideosSymfony\templates\ticket" />
+      <recent name="C:\Users\HB\Documents\cours\coursPHP\jeuxVideosSymfony\jeuxVideosSymfony\src\Form" />
+      <recent name="C:\Users\HB\Documents\cours\coursPHP\jeuxVideosSymfony\jeuxVideosSymfony\templates\post" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -205,6 +247,12 @@
       <workItem from="1625815030524" duration="490000" />
       <workItem from="1625815548519" duration="1729000" />
       <workItem from="1625817327437" duration="736000" />
+      <workItem from="1627043482928" duration="6352000" />
+      <workItem from="1627366855923" duration="14210000" />
+      <workItem from="1627456336351" duration="22651000" />
+      <workItem from="1627539791630" duration="15065000" />
+      <workItem from="1627562410909" duration="7214000" />
+      <workItem from="1627625976328" duration="501000" />
     </task>
     <servers />
   </component>
@@ -224,6 +272,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1940" y="67" key="#com.intellij.ide.util.MemberChooser" timestamp="1627547115624">
+      <screen x="1366" y="-66" width="1536" height="834" />
+    </state>
+    <state x="1940" y="67" key="#com.intellij.ide.util.MemberChooser/0.30.1366.738/1366.-66.1536.834@1366.-66.1536.834" timestamp="1627547115624" />
+    <state x="1865" y="106" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1627482173749">
+      <screen x="1366" y="-66" width="1536" height="834" />
+    </state>
+    <state x="1865" y="106" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.30.1366.738/1366.-66.1536.834@1366.-66.1536.834" timestamp="1627482173749" />
+    <state x="1915" y="106" key="FileChooserDialogImpl" timestamp="1627388195942">
+      <screen x="1366" y="-66" width="1536" height="834" />
+    </state>
+    <state x="1915" y="106" key="FileChooserDialogImpl/0.30.1366.738/1366.-66.1536.834@1366.-66.1536.834" timestamp="1627388195942" />
     <state x="1369" y="-58" width="1501" height="778" key="MergeDialog" timestamp="1625825576695">
       <screen x="1366" y="-66" width="1536" height="834" />
     </state>
@@ -232,5 +292,17 @@
       <screen x="1366" y="-66" width="1536" height="834" />
     </state>
     <state x="1820" y="64" width="854" height="608" key="MultipleFileMergeDialog/0.30.1366.738/1366.-66.1536.834@1366.-66.1536.834" timestamp="1625825576731" />
+    <state x="1804" y="74" key="NewPhpClassDialog" timestamp="1627386223425">
+      <screen x="1366" y="-66" width="1536" height="834" />
+    </state>
+    <state x="1804" y="74" key="NewPhpClassDialog/0.30.1366.738/1366.-66.1536.834@1366.-66.1536.834" timestamp="1627386223425" />
+    <state x="1944" y="265" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1627457429391">
+      <screen x="1366" y="-66" width="1536" height="834" />
+    </state>
+    <state x="1944" y="265" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1366.738/1366.-66.1536.834@1366.-66.1536.834" timestamp="1627457429391" />
+    <state x="339" y="52" width="672" height="676" key="search.everywhere.popup" timestamp="1627045099735">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="339" y="52" width="672" height="676" key="search.everywhere.popup/0.30.1366.738/1366.-66.1536.834@0.30.1366.738" timestamp="1627045099735" />
   </component>
 </project>

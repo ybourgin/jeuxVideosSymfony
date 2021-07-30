@@ -1,0 +1,26 @@
+{% extends 'layout/front.html.twig' %}
+
+{% block title %}Forum{% endblock %}
+
+{% block body %}
+    <h1>Forum</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ forum.id }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ forum.title }}</td>
+            </tr>
+            <tr>
+                <th>CreatedAt</th>
+                <td>{{ forum.createdAt ? forum.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('frontForum_index') }}">back to list</a>
+{% endblock %}

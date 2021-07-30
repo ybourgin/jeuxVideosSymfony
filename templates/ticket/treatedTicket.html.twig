@@ -1,0 +1,15 @@
+{% extends 'layout/frontAdmin.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h3>Ticket</h3>
+{#        <p>Par : {{ user.firstName }} {{ user.lastName }} </p>#}
+        <p>{{ ticketEntity.createAt|date("d/M/Y h:m:s") }}</p>
+        <p>{{ ticketEntity.content }}</p>
+
+        <a class="btn btn-lg btn-warning" href="{{ path('treated_ticket',{'id': ticketEntity.id}) }}">Traiter le ticket</a>
+
+    </div>
+{% endblock %}

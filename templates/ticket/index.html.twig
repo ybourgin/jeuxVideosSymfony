@@ -1,0 +1,20 @@
+{% extends 'layout/frontAdmin.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h3>Ticket</h3>
+        <ul>
+            {% for ticket in ticketList %}
+                <li>{{ ticket.content|length > 10? ticket.content|slice(0, 10) ~ '...' : ticket.content  }}
+                    <a class="btn btn-outline btn-success" href="{{ path('read_ticket',{'id': ticket.id}) }}">Read</a>
+{#                    <a class="btn btn-outline btn-danger" href="{{ path('post_remove',{'id': post.id}) }}">supprimer</a>#}
+                    {% if ticket.status==2 %}
+                        <p>Traité par {{ ticket.treatedBy.firstName }} {{ ticket.treatedBy.lastName }}</p>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

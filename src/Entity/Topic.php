@@ -35,12 +35,12 @@ class Topic
     private $pathLogo;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Forum::class, inversedBy="topics")
+     * @ORM\ManyToOne(targetEntity=Forum::class, inversedBy="topics", cascade={"remove"})
      */
     private $forum;
 
     /**
-     * @ORM\OneToMany(targetEntity=Message::class, mappedBy="topic")
+     * @ORM\OneToMany(targetEntity=Message::class, mappedBy="topic", cascade={"remove"})
      */
     private $messages;
 

@@ -1,0 +1,18 @@
+{% extends 'layout/frontAdmin.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h1>Post</h1>
+        <ul>
+            {% for post in postList %}
+                <li>{{ post.title }}
+                    <a class="btn btn-outline btn-success" href="{{ path('post_edit',{'id': post.id}) }}">Edit</a>
+                    <a class="btn btn-outline btn-danger" href="{{ path('post_remove',{'id': post.id}) }}">supprimer</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a class="btn btn-lg btn-primary" href="{{ path('post_add') }}">Add Post</a>
+    </div>
+{% endblock %}

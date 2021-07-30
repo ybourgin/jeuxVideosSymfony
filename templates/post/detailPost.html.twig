@@ -1,0 +1,10 @@
+{% extends 'layout/front.html.twig' %}
+
+{% block title %}Hello PostController!{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h2>{{ postEntity.title }}</h2>
+        <p class="card-text">{{ postEntity.content }}</p>
+    </div>
+{% endblock %}
